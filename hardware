@@ -1,0 +1,24 @@
+# Bill of Materials (BOM)
+
+This project builds a closed-loop electromechanical control system based on the Arduino platform. The core components are listed below:
+
+### 1. Main Controller & Display
+* **Main Board:** Arduino Mega 2560 (Recommended, requires multiple hardware/software serial ports and PWM pins)
+* **Display:** LCD 1602 (with I2C adapter, default address `0x27`)
+
+### 2. Environmental Perception System (Sensors)
+* **PM2.5 Sensor:** Laser scattering dust sensor (e.g., Sharp GP2Y1014AU)
+* **CO Sensor:** MQ-7 Gas Sensor Module
+* **CO2 Sensor:** NDIR CO2 Sensor supporting UART communication (e.g., MH-Z19)
+* *(Reserved)* **SO2 Sensor:** SO2 Electrochemical Sensor Module
+
+### 3. Execution & Regulation System (Actuators)
+* **Intake Fan:** 12V/24V DC Fan (with high-power relay or MOSFET module)
+* **Micro Pump:** For injecting hydrogen peroxide (with 5V relay module)
+* **Tesla Valve Wall Driver:** Micro DC Linear Actuator (with L298N motor driver board)
+* **Tesla Valve Baffle Driver:** Micro Servo (e.g., SG90)
+* **Catalytic Chamber Heating Unit:** Heating tube or heating wire (requires high-power solid-state relay or MOSFET for PWM power control)
+
+### 4. Interaction & Alarm
+* **Buzzer:** 5V Active Buzzer
+* **LED Indicator:** 5V Red/Green LED Module
