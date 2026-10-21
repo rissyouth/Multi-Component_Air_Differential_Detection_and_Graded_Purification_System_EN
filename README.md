@@ -1,6 +1,7 @@
 # Multi-Component_Air_Differential_Detection_and_Graded_Purification_System_EN
 # Multi-Component Air Adaptive Differential Detection and Graded Purification System
 
+[English](./README.md) | [简体中文](./README_ZH.md)
 > 🚧 **Status:** Patent Pending (Dual-Filed) | **Author:** Yiming Wu (rissyouth)
 > * **Invention Patent App No.:** 202611542863.0
 > * **Utility Model App No.:** 202621553759.7
