@@ -1,25 +1,28 @@
-# Multi-Component Air Differential Detection and Graded Purification System
-# 多组分空气差分检测与分级净化装置
+# Multi-Component Air Adaptive Differential Detection and Graded Purification System
 
-> 🚧 **Status:** Patent Pending (Dual-Filed / 双报申请中)
-> * **Invention Patent App No. (发明专利):** 202611542863.0[cite: 26]
-> * **Utility Model App No. (实用新型):** 202621553759.7[cite: 27]
+[English](./README.md) | [简体中文](./README_ZH.md)
+> 🚧 **Status:** Patent Pending (Dual-Filed) | **Author:** Yiming Wu (rissyouth)
+> * **Invention Patent App No.:** 202611542863.0
+> * **Utility Model App No.:** 202621553759.7
 > * **Date of Filing:** Oct 1, 2026
-## 🌟 项目概览 (Project Overview)
-本项目针对现代工业与复杂室内环境，设计了一套具备**动态流体控制**与**靶向分级净化**的开源空气净化装置原型。系统采用前/后双路传感器进行差分闭环检测，并在流道中创新性地集成了**可调式特斯拉限速阀**。
 
-在遭遇严重污染突发（如高浓度 CO 或 PM2.5 飙升）时，主控微处理器将基于流体连续性方程（$Q=v \cdot A$）伺服控制特斯拉阀扩大横截面积并切入挡板，强行延长污染气体在反应腔室内的接触滞留时间，以实现高效率的彻底净化与节能复位。
+## 🌟 Project Overview
+Targeting complex industrial and indoor environments, this project presents an open-source air purification prototype featuring **dynamic fluid control** and **targeted graded purification**. The system employs a dual-sensor array (front/rear) for differential closed-loop detection and innovatively integrates an **adjustable Tesla valve** in the fluid channel. 
 
-## ⚙️ 核心技术创新 (Core Innovations)
-* **动态特斯拉阀调流 (Dynamic Tesla Valve):** 采用直线推杆电机与微型舵机，在保持总进气量不减的前提下，动态调整气流通道夹角与流阻。
-* **多级靶向净化 (Targeted Purification):** 高温加热 ACO-2 催化分解一氧化碳 + 氢氧化钠改性活性炭中和吸收二氧化硫及粉尘。
-* **差分闭环效能检测 (Differential Closed-loop):** 进/出风口双检测仓实时比对，闭环核算净化效率，支持突发污染的微分（斜率）极速预警。
-* **智能控温与节能 (Smart Energy Saving):** 基于污染浓度的 PWM 动态加热控温机制，达标后自动缩回特斯拉阀并关闭外围机电进入深度休眠。
+In the event of severe sudden pollution (e.g., soaring CO or PM2.5), the MCU utilizes the fluid continuity equation ($Q=v \cdot A$) to servo-control the Tesla valve, expanding the cross-sectional area and engaging the baffle. This forces an extension of the residence time of polluted gases in the reaction chambers, achieving highly efficient, thorough purification and intelligent energy-saving resets.
 
-## 📂 仓库结构 (Repository Structure)
-* `/hardware`: 硬件物料清单（BOM）与机械结构设计参考。
-* `/firmware`: 基于 Arduino 架构的传感器数据采集、状态机控制与特斯拉阀机电协同源码。
+## ⚙️ Core Innovations
+* **Dynamic Tesla Valve Flow Control:** Utilizes a linear actuator and a micro servo to dynamically adjust the airflow channel angle and flow resistance without reducing the total intake volume.
+* **Multi-Stage Targeted Purification:** High-temperature ACO-2 catalytic decomposition for CO + NaOH-modified activated carbon for neutralizing SO2 and trapping PM2.5.
+* **Differential Closed-Loop Efficacy Detection:** Real-time comparison between inlet/outlet detection chambers to calculate purification efficiency in a closed loop, supporting ultra-fast differential (slope) early warnings for sudden pollution.
+* **Smart Temperature Control & Energy Saving:** PWM dynamic heating mechanism based on pollution concentration. Automatically retracts the Tesla valve and shuts down peripheral electromechanical modules to enter deep sleep mode once standards are met.
 
-## 🛠️ 技术栈 (Tech Stack)
-* **硬件:** Arduino Mega 2560, I2C, UART, PWM Motor Control
-* **软件:** C++ (Arduino IDE)
+## 📂 Repository Structure
+* `/docs`: Contains the patent specification, claims, and system schematics. (To be uploaded)
+* `/hardware`: Bill of Materials (BOM) and mechanical structure design references.
+* `/firmware`: Arduino-based source code for sensor data acquisition, state machine control, and Tesla valve electromechanical synergy.
+
+## 🛠️ Tech Stack
+* **Hardware:** Arduino Mega 2560, I2C, UART, PWM Motor Control
+* **Software:** C++ (Arduino IDE)
+* **Mechanical:** Fusion 360 / Blender (3D Modeling)
